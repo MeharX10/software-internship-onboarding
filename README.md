@@ -134,5 +134,11 @@ Clarity, correctness, and understanding are prioritised over complexity.
 
 ---
 
+## Pull Request Practice
+
+This section was added to demonstrate creating and reviewing a GitHub Pull Request.
+
+---
+
 *Maintained by Bhanu Mehar*
 
