@@ -2,3 +2,4 @@ Initial content line 2
 New feature line 1
 New feature line 2
 
+Initial line for staging vs committing test
