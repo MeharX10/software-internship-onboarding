@@ -1,7 +1,7 @@
 import Foundation
 
 func totalScore(_ scores: [Int]) -> Int {
-    return scores.reduce(0, +)
+    return scores.reduce(0) { -e -  }
 }
 
 let scores = [5, 4, 3, 2, 1]
