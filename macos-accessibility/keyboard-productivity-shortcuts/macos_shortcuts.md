@@ -22,7 +22,7 @@
 15. **Mission Control (see all windows/spaces)** — `Control ↑`  
 16. **Show Desktop** — `⌘ Mission Control (F3)` *(depending on Mac/keyboard settings)*
 
-## Screenshots / recordings (super useful for onboarding evidence)
+## Screenshots / recordings 
 17. **Screenshot entire screen** — `⇧ ⌘ 3`  
 18. **Screenshot a selected area** — `⇧ ⌘ 4`  
 19. **Screenshot toolbar / screen recording tools** — `⇧ ⌘ 5`
