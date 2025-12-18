@@ -5,4 +5,4 @@ func totalScore(_ scores: [Int]) -> Int {
 }
 
 let scores = [5, 4, 3, 2, 1]
-print("Total:", totalScore(scores))
+print("Total score:", totalScore(scores))
