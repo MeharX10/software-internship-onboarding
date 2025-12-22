@@ -1,6 +1,6 @@
 # 5.8 – Automator / Shortcuts Workflow
 
-This task is complete. I created a macOS **Automator Quick Action** and exported the workflow file 
+This task is complete. I created a macOS **Automator Quick Action** and exported the workflow file
 as proof.
 
 ---
@@ -16,10 +16,12 @@ as proof.
 ## Workflow Setup (Automator)
 
 ### Workflow receives
+
 - **Workflow receives**: `no input`
 - **In**: `any application`
 
 ### Actions used (final)
+
 1. **Get Value of Variable**
    - Variable: `Today's date`
 
@@ -27,7 +29,7 @@ as proof.
    - Title: `Automator Demo`
    - Message: `Automator workflow ran successfully on {Today's date}`
 
-Note: I initially added an extra Text variable, but removed it because it was unused. The date 
+Note: I initially added an extra Text variable, but removed it because it was unused. The date
 variable is directly embedded in the notification message and works correctly.
 
 ---
@@ -35,8 +37,8 @@ variable is directly embedded in the notification message and works correctly.
 ## How I Tested It
 
 - I ran the Quick Action from Automator.
-- A macOS notification appeared confirming the workflow executed successfully and showed today’s 
-date.
+- A macOS notification appeared confirming the workflow executed successfully and showed today’s
+  date.
 
 ---
 
@@ -56,9 +58,8 @@ src="https://github.com/user-attachments/assets/eb748992-03d1-492f-9c68-964934d4
 
 ## Final Status
 
-- Workflow created 
-- Exported `.workflow` file saved   
-- Notification confirmed successful run  
+- Workflow created
+- Exported `.workflow` file saved
+- Notification confirmed successful run
 
 This issue is complete and ready to be closed.
-

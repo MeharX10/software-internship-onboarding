@@ -1,14 +1,14 @@
 # Understanding Clean Code Principles (Swift)
 
 This task has been completed successfully.  
-I researched core clean code principles, analyzed a real example of messy Swift code, refactored it using clean code practices, tested both versions, and documented the 
+I researched core clean code principles, analyzed a real example of messy Swift code, refactored it using clean code practices, tested both versions, and documented the
 results.
 
 ---
 
 ## Objective
 
-The goal of this task was to understand **why clean code matters** and how applying clean code principles improves **readability, safety, and long-term maintainability** in 
+The goal of this task was to understand **why clean code matters** and how applying clean code principles improves **readability, safety, and long-term maintainability** in
 real-world development.
 
 ---
@@ -16,30 +16,35 @@ real-world development.
 ## Clean Code Principles Studied
 
 ### 1. Simplicity
+
 Code should do one thing clearly and avoid unnecessary complexity.  
 Simple code is easier to test, debug, and extend.
 
 ---
 
 ### 2. Readability
+
 Code should be easy to read and understand without needing extra explanation.  
 Clear naming, spacing, and structure help other developers understand intent quickly.
 
 ---
 
 ### 3. Maintainability
+
 Future developers (including myself) should be able to modify the code safely.  
 Well-structured code reduces bugs when changes are required later.
 
 ---
 
 ### 4. Consistency
+
 Using consistent naming, formatting, and patterns makes a project predictable.  
 Consistency reduces cognitive load when switching between files.
 
 ---
 
 ### 5. Efficiency
+
 Clean code balances performance with clarity.  
 The goal is not premature optimisation, but writing safe and efficient logic.
 
@@ -52,6 +57,7 @@ I used a common beginner-style Swift example that contains multiple clean code i
 **File:** `messy.swift`
 
 ### Problems in the messy code
+
 - Uses force unwraps (`!`) which can crash the program
 - Uses unclear variable names (`a`, `b`, `t`, `r`)
 - Mixes validation and logic in one function
@@ -76,6 +82,7 @@ I rewrote the same logic using clean code principles.
 **File:** `clean.swift`
 
 ### Improvements Made
+
 - Removed all force unwraps
 - Used meaningful variable and function names
 - Introduced enums instead of string comparisons
@@ -86,6 +93,7 @@ I rewrote the same logic using clean code principles.
 ---
 
 ### Clean Code Output (Valid Input)
+
 Result: 15
 
 ---
@@ -98,7 +106,8 @@ Instead of crashing, the program fails safely:
 ---
 
 ### Screenshots
-- Screenshot showing messy & clean Swift outputs (valid input)  
+
+- Screenshot showing messy & clean Swift outputs (valid input)
 
 <img width="756" height="71" alt="Image" src="https://github.com/user-attachments/assets/69d59f15-17b8-4650-a346-e18c9da2cf1a" />
 
@@ -114,12 +123,12 @@ Instead of crashing, the program fails safely:
 
 ## Key Learning Comparison
 
-| Messy Code | Clean Code |
-|-----------|-----------|
-| Crashes on invalid input | Handles errors safely |
-| Hard to read | Easy to understand |
-| Unsafe force unwraps | Uses guard and error handling |
-| Difficult to extend | Easy to maintain and extend |
+| Messy Code               | Clean Code                    |
+| ------------------------ | ----------------------------- |
+| Crashes on invalid input | Handles errors safely         |
+| Hard to read             | Easy to understand            |
+| Unsafe force unwraps     | Uses guard and error handling |
+| Difficult to extend      | Easy to maintain and extend   |
 
 ---
 
@@ -134,6 +143,7 @@ Instead of crashing, the program fails safely:
 ---
 
 ## Files Added
+
 ```
 clean-code/clean-code-principles/
 ├── messy.swift
@@ -161,6 +171,3 @@ clean-code/clean-code-principles/
 - Task requirements fully met
 
 This issue is complete and ready to be closed.
-
-
-

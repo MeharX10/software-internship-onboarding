@@ -1,19 +1,22 @@
 # 6.5 – Closures & Higher Order Functions
 
 This task has been completed successfully.  
-I created and executed a Swift program demonstrating the use of **closures** with the higher-order functions **map**, 
+I created and executed a Swift program demonstrating the use of **closures** with the higher-order functions **map**,
 **filter**, and **reduce**, verified the output through the terminal, and pushed the implementation to GitHub.
 
 ---
 
 ## Objective
-The goal of this task was to understand how Swift uses **closures** together with higher-order functions to process 
+
+The goal of this task was to understand how Swift uses **closures** together with higher-order functions to process
 collections in a clean, readable, and functional way.
 
 ---
 
 ## What Are Higher Order Functions
+
 Higher-order functions are functions that:
+
 - Take other functions (closures) as parameters, or
 - Return functions as results
 
@@ -69,6 +72,7 @@ let totalSum = numbers.reduce(0) { partialResult, number in
 print("\nReduce result (sum of numbers):")
 print(totalSum)
 ```
+
 ---
 
 ## Terminal Execution & Output
@@ -77,6 +81,7 @@ The program was executed using the **Swift CLI**:
 `swift swift/closures-higher-order/HigherOrderFunctions.swift`
 
 ### Output
+
 ```
 Map result (doubled numbers):
 [2, 4, 6, 8, 10, 12]
@@ -91,6 +96,7 @@ Reduce result (sum of numbers):
 ---
 
 ## Screenshot Evidence
+
 ### Screenshot 1
 
 - Terminal showing successful execution of the Swift file

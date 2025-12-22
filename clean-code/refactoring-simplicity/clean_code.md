@@ -1,11 +1,13 @@
 # Refactoring Code for Simplicity (Issue #69)
 
 ## Goal
+
 The goal of this activity was to learn how to simplify overly complex code without changing what the code does. I focused on identifying unnecessary complexity, understanding why it was hard to read, and refactoring it into a clearer and more maintainable version while keeping the output exactly the same.
 
 ---
 
 ## Research and background
+
 Refactoring for simplicity usually means breaking complex logic into smaller pieces, using clear names, and reducing mental load for the reader. Complexity often comes from large conditionals, mixed responsibilities, and logic that forces the reader to understand everything at once.
 
 I used a real and widely referenced example from Refactoring Guru that demonstrates how complex conditional logic can be simplified using small helper functions.
@@ -68,6 +70,7 @@ The conditional mixes date logic and pricing logic together, the meaning of the 
 ## Refactored and simplified version
 
 The refactored version separates responsibilities into small, clearly named functions. The logic reads closer to natural language and is easier to modify later.
+
 ```
 import Foundation
 
@@ -115,6 +118,7 @@ print(String(format: "Charge, %.2f", result))
 Both versions were executed locally using the Swift command line. The output from the original and refactored files was identical, which confirms that the refactor did not change functionality.
 
 Expected output from both files:
+
 ```
 Charge, 17.00
 ```
@@ -126,16 +130,21 @@ Charge, 17.00
 ---
 
 ## Reflection
+
 ### What made the original code complex
+
 The original code was complex because business rules and condition checks were tightly coupled. The conditional required understanding multiple ideas at once, date comparison, pricing rules, and service charges. This increases cognitive load and makes future changes risky.
 
 ### How refactoring improved it
+
 Refactoring separated the logic into small, purpose driven functions. Each function now answers a single question, such as whether it is summer, or how to calculate a winter charge. The main function reads clearly and communicates intent without needing comments.
 
 ### Why simpler code helps long term
+
 Simpler code is easier to debug because each part can be tested in isolation. It is also safer to modify, because changing one rule does not require touching unrelated logic. This reduces bugs and makes onboarding easier for new developers reading the code later.
 
 ---
 
 ## Conclusion
+
 This task showed that refactoring is not about changing behaviour, it is about reducing complexity. By simplifying conditionals and separating responsibilities, the code became easier to read, easier to maintain, and easier to trust, while producing the exact same output.

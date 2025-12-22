@@ -1,18 +1,19 @@
 # Commenting & Documentation
 
 ## Goal
-The goal of this task was to understand when comments and documentation actually add value, and when they hide problems in the code. 
-Instead of writing comments everywhere, I focused on learning how good comments explain intent, context, or reasoning, while clean code 
+
+The goal of this task was to understand when comments and documentation actually add value, and when they hide problems in the code.
+Instead of writing comments everywhere, I focused on learning how good comments explain intent, context, or reasoning, while clean code
 explains itself.
 
 ---
 
 ## Research: best practices for comments and documentation
 
-From my research, good comments are not about repeating what the code already says. They are about explaining *why* something exists, *why* 
-a decision was made, or *what assumptions* the code relies on.
+From my research, good comments are not about repeating what the code already says. They are about explaining _why_ something exists, _why_
+a decision was made, or _what assumptions_ the code relies on.
 
-Poor comments usually happen when code is hard to read. In that case, the real fix is improving names, structure, or logic, not adding more 
+Poor comments usually happen when code is hard to read. In that case, the real fix is improving names, structure, or logic, not adding more
 comments.
 
 Key ideas I learned:
@@ -40,7 +41,7 @@ The example below shows code where comments repeat the obvious, hide bad naming,
 func calc(x: Double, y: Double) -> Double {
     // add x and y
     let z = x + y
-    
+
     // return z
     return z
 }
@@ -58,7 +59,9 @@ func calc(x: Double, y: Double) -> Double {
 ---
 
 ## Refactored version with meaningful documentation
+
 Instead of adding more comments, I improved the code so most comments became unnecessary. I only kept documentation where it added clarity.
+
 ```
 /// Calculates the final bill amount by adding the base price and tax.
 /// This function assumes taxAmount is already calculated elsewhere.
@@ -107,12 +110,11 @@ Clean code reduces the need for comments.
 
 ## Personal reflection
 
-While doing this task, I realised that comments are not a substitute for clarity. In the poorly commented example, the comments existed 
-only because the code itself was unclear. After refactoring, the code became self explanatory, and the comments shifted from describing 
+While doing this task, I realised that comments are not a substitute for clarity. In the poorly commented example, the comments existed
+only because the code itself was unclear. After refactoring, the code became self explanatory, and the comments shifted from describing
 actions to explaining intent.
 
-This approach makes the code easier to maintain, easier to debug, and safer to change in the future, especially when someone else reads it 
+This approach makes the code easier to maintain, easier to debug, and safer to change in the future, especially when someone else reads it
 months later.
 
 ---
-

@@ -15,9 +15,9 @@ This helped me understand how unsafe forced unwrapping is and why it should not 
 
 The updated function introduced several improvements:
 
-1. A custom error type so the problem can be clearly identified.  
-2. A guard clause to check for valid input before continuing.  
-3. A throwing function so errors can be handled by the caller.  
+1. A custom error type so the problem can be clearly identified.
+2. A guard clause to check for valid input before continuing.
+3. A throwing function so errors can be handled by the caller.
 4. A do–catch block so the program displays a readable message instead of crashing.
 
 This approach makes the code safer because unexpected input no longer breaks the program.  
@@ -31,4 +31,3 @@ Writing code that “just works” is not enough.
 The real goal is writing code that keeps working even when something goes wrong.  
 Guard clauses make the intent of the function clear and reduce nesting, and do–catch patterns help separate normal flow from error flow.  
 This task made error handling feel more natural and less complicated.
-

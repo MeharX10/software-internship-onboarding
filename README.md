@@ -3,6 +3,7 @@
 This repository contains my **internship onboarding work**, technical practice tasks, and learning milestones completed as part of the **Focus Bear internship program**.
 
 The purpose of this repository is to:
+
 - Practice real-world development workflows
 - Build strong foundations in Git, terminal usage, and Swift
 - Document learning clearly through code, commits, and reflections
@@ -15,6 +16,7 @@ This repository will continue to grow as I complete the remaining onboarding iss
 ## Repository Structure
 
 The repository is organised by topic so that each task is easy to locate and review.
+
 ```
 .
 ├── LICENSE
@@ -78,6 +80,7 @@ So far, this repository includes work on:
 - Proper commit messages and push workflow
 
 Each completed task includes:
+
 - Actual working code
 - Terminal execution and verification
 - Reflections explaining decisions and outcomes
@@ -88,7 +91,7 @@ Each completed task includes:
 
 - Each onboarding issue corresponds to **one or more commits**
 - Code is committed incrementally, not dumped all at once
-- Reflections explain *why* something was done, not just *what*
+- Reflections explain _why_ something was done, not just _what_
 - Screenshots are added to GitHub issues when required
 - This repository acts as a **learning log**, not just a code dump
 
@@ -140,5 +143,4 @@ This section was added to demonstrate creating and reviewing a GitHub Pull Reque
 
 ---
 
-*Maintained by Bhanu Mehar*
-
+_Maintained by Bhanu Mehar_

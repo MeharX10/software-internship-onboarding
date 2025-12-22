@@ -1,7 +1,7 @@
 # 6.6 – Error Handling (Custom Error + try/catch)
 
 This task has been completed successfully.  
-I implemented a Swift example that demonstrates **custom error definitions**, **throwing errors**, and **handling them using 
+I implemented a Swift example that demonstrates **custom error definitions**, **throwing errors**, and **handling them using
 try/catch**. The code was written, executed, committed, and pushed using the terminal.
 
 ---
@@ -24,6 +24,7 @@ swift/error-handling/ErrorHandling.swift
 ```
 
 This file contains:
+
 - A custom `Error` enum
 - A function that validates input and throws errors
 - A wrapper function that handles errors using `try/catch`
@@ -45,21 +46,21 @@ enum LoginError: Error {
 
 // MARK: - Function that throws errors
 func login(username: String?, password: String?) throws -> String {
-    
+
     // Guard clauses for validation
     guard let username = username, !username.isEmpty else {
         throw LoginError.emptyUsername
     }
-    
+
     guard let password = password, !password.isEmpty else {
         throw LoginError.emptyPassword
     }
-    
+
     // Simulated credential check
     if username != "focusbear" || password != "internbhanumacdev" {
         throw LoginError.invalidCredentials
     }
-    
+
     return "Login successful. Welcome, \(username)."
 }
 
@@ -122,6 +123,7 @@ Login successful. Welcome, focusbear.
 ```
 
 This confirms:
+
 - Errors are thrown correctly
 - Each error case is handled safely
 - The program does not crash
@@ -147,6 +149,7 @@ This confirms:
 - Final push completed to `main`
 
 Commit message used:
+
 ```
 Add Swift custom error handling with try/catch example
 ```
@@ -178,4 +181,3 @@ src="https://github.com/user-attachments/assets/9b785cfe-32cf-4d59-b293-aea057f9
 - Changes committed and pushed
 
 This task is complete and ready to be closed.
-
