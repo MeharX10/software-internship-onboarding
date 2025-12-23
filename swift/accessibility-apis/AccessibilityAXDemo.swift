@@ -1,21 +1,25 @@
-import Foundation
+import Cocoa
 import ApplicationServices
 
-// Create system-wide accessibility object
+print("AX Trusted:", AXIsProcessTrusted())
+
+// Get the system-wide accessibility object
 let systemWideElement = AXUIElementCreateSystemWide()
 
-// Attempt to read the currently focused UI element
-var focusedElement: AnyObject?
+var attributeNames: CFArray?
 
-let result = AXUIElementCopyAttributeValue(
+let result = AXUIElementCopyAttributeNames(
     systemWideElement,
-    kAXFocusedUIElementAttribute as CFString,
-    &focusedElement
+    &attributeNames
 )
 
-if result == .success {
-    print("Focused UI element retrieved successfully")
-    print("AX Element:", focusedElement ?? "Unknown")
+// Handle result
+if result == .success, let attributes = attributeNames as? [String] {
+    print("Successfully interacted with AX API.")
+    print("Available AX attributes:")
+    for attribute in attributes {
+        print("- \(attribute)")
+    }
 } else {
-    print("Failed to retrieve focused UI element")
+    print("Failed to retrieve AX attributes.")
 }
