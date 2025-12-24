@@ -1,0 +1,40 @@
+{
+  "version": "0.2",
+  "language": "en,en-GB",
+  "words": [
+    "Xcode",
+    "SwiftPM",
+    "swiftpm",
+    "doner",
+    "bhanupratap",
+    "Ascot",
+    "FocusBearQA",
+    "Bhanu",
+    "Mehar",
+    "APFS",
+    "Automator",
+    "XCUI",
+    "focusbear",
+    "jsonplaceholder",
+    "typicode",
+    "Preboot",
+    "nonobvious",
+    "oneline",
+    "cust",
+    "Pratap",
+    "AXUI",
+    "Greetable",
+    "subheadline",
+    "internbhanumacdev",
+    "AX",
+    "AXUIElement",
+    "SwiftUI",
+    "Codable"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    ".git/**",
+    "build/**"
+  ]
+}
+

@@ -7,17 +7,32 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .js,.jsx --ignore-path .eslintignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .eslintignore",
-    "format": "prettier --write \"**/*.{js,jsx,json,md,css,scss}\""
+    "format": "prettier --write \"**/*.{js,jsx,json,md,css,scss}\"",
+    "lint:md": "markdownlint-cli2 \"README.md\" \"clean-code/**/*.md\" \"swift/**/*.md\" \"git-tests/**/*.md\" \"filesystem/**/*.md\" \"automation/**/*.md\"",
+    "spell": "cspell --config cspell.json --exclude node_modules/** \"**/*.{md,mdx,txt,swift,swiftpm,py,js,ts,tsx}\"",
+    "precommit": "npm run lint:md && npm run spell",
+    "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.md": [
+      "markdownlint-cli2 --config .markdownlint.yaml --ignore node_modules/**",
+      "cspell --config cspell.json"
+    ]
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cspell": "^9.4.0",
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^16.2.7",
+    "markdownlint-cli2": "^0.20.0",
     "prettier": "^3.7.4"
   }
 }
