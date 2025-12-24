@@ -137,10 +137,10 @@ Clarity, correctness, and understanding are prioritised over complexity.
 
 ---
 
-## Pull Request Practice
+## Pull Request Practice & testing husky precommit
 
 This section was added to demonstrate creating and reviewing a GitHub Pull Request.
-This line was added to test husky precommit.
+This line was added to test husky precommit & will be removed later. 
 
 ---
 
