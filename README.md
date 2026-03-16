@@ -1,6 +1,6 @@
 # Bhanu Mehar – Internship Onboarding Repository
 
-This repository contains my **internship onboarding work**, technical practice tasks, and learning milestones completed as part of the **Focus Bear internship program**.
+This repository contains my **internship onboarding work**, technical practice tasks, and learning milestones completed as part of the **internship program**.
 
 The purpose of this repository is to:
 
@@ -19,47 +19,102 @@ The repository is organised by topic so that each task is easy to locate and rev
 
 ```
 .
-├── LICENSE
-├── README.md
 ├── architecture-diagram
 │   ├── Helpers, Login Items & Privileged Tools_ Focus-Bear (1).png
 │   └── Helpers, Login Items & Privileged Tools_ Focus-Bear.pdf
+├── automation
+│   └── automator-shortcuts
+│       └── automator_workflow_report.md
 ├── clean-code
+│   ├── clean_code.md
 │   ├── clean-code-principles
-│   │   ├── clean.swift
 │   │   ├── clean_code.md
+│   │   ├── clean.swift
 │   │   └── messy.swift
-│   └── error-handling
-│       ├── badFunction.swift
+│   ├── code-duplication
+│   │   ├── duplicate_example.py
+│   │   └── refactored_example.py
+│   ├── code-smells
+│   │   ├── code_smells.md
+│   │   └── CodeSmellsDemo.swift
+│   ├── commenting-documentation
+│   │   └── clean_code.md
+│   ├── error-handling
+│   │   ├── badFunction.swift
+│   │   ├── clean_code.md
+│   │   └── improvedFunction.swift
+│   └── refactoring-simplicity
 │       ├── clean_code.md
-│       └── improvedFunction.swift
+│       ├── OriginalComplexConditional.swift
+│       └── RefactoredSimpleConditional.swift
 ├── commit-message-practice.txt
+├── cspell.json
 ├── filesystem
 │   └── apfs-structure
 │       ├── APFS Structure Diagram.png
-│       ├── DiskUtility_APFS.png
-│       └── apfs_structure.md
+│       ├── apfs_structure.md
+│       └── DiskUtility_APFS.png
+├── git_understanding.md
 ├── git-tests
+│   ├── bisect
+│   │   ├── bisect_report.md
+│   │   └── BisectDemo.swift
 │   ├── merge-conflicts
 │   │   ├── conflict.txt
 │   │   └── merge_conflicts_report.md
 │   └── testfile.txt
+├── LICENSE
+├── macos-accessibility
+│   └── keyboard-productivity-shortcuts
+│       └── macos_shortcuts.md
 ├── networking
+│   ├── mock-api-testing
+│   │   └── MockAPITest.swift
+│   ├── urlsession-get
+│   │   └── URLSessionGet.swift
 │   └── week4-post-request
 │       └── PostRequest.swift
+├── package-lock.json
+├── package.json
+├── python
+│   └── unit-testing
+│       ├── calculator.py
+│       ├── clean_code.md
+│       └── test_calculator.py
+├── README.md
+├── swift
+│   ├── accessibility-apis
+│   │   ├── AccessibilityAXDemo
+│   │   └── AccessibilityAXDemo.swift
+│   ├── closures-higher-order
+│   │   ├── closures_higher_order.md
+│   │   └── HigherOrderFunctions.swift
+│   ├── error-handling
+│   │   ├── error_handling.md
+│   │   └── ErrorHandling.swift
+│   ├── generics
+│   │   └── GenericsExample.swift
+│   ├── networking-layer
+│   │   ├── Combined.swift
+│   │   ├── NetworkManager.swift
+│   │   └── NetworkManagerTest.swift
+│   ├── permission-request
+│   │   └── PermissionRequest.swift
+│   └── structs-vs-classes
+│       └── StructsVsClassesDemo.swift
+├── swift-basics
+│   └── VariablesConstantsDataTypes.swiftpm
+│       ├── ContentView.swift
+│       ├── MyApp.swift
+│       └── Package.swift
 ├── swift-ui
 │   └── api-list
 │       └── ApiListView.swift
-├── terminal-practice
-│   ├── logs
-│   ├── notes
-│   │   └── commands-notes.md
-│   └── projects
-│       └── week4
-│           └── week4-session-1.txt
-└── zsh-test
+└── terminal-practice
+    └── notes
+        └── commands-notes.md
 
-19 directories, 21 files
+38 directories, 57 files
 ```
 
 Each folder represents a **specific learning area or task group**.  
@@ -121,26 +176,10 @@ Each completed task includes:
 
 ---
 
-## Current Status
-
-- Internship onboarding **in progress**
-- Multiple tasks completed and pushed
-- Remaining onboarding issues will be added progressively
-- Repository will be continuously updated
-
----
-
 ## Notes
 
 This repository is intentionally structured for **learning and review**, not as a production application.  
 Clarity, correctness, and understanding are prioritised over complexity.
-
----
-
-## Pull Request Practice & testing husky precommit
-
-This section was added to demonstrate creating and reviewing a GitHub Pull Request.
-This line was added to test husky precommit & will be removed later. 
 
 ---
 
