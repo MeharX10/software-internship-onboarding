@@ -1,4 +1,4 @@
-# Bhanu Mehar – Internship Onboarding Repository
+# Internship Onboarding Repository
 
 This repository contains my **internship onboarding work**, technical practice tasks, and learning milestones completed as part of the **internship program**.
 
